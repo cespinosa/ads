@@ -12,7 +12,7 @@ class cached_property(_cached_property):
     Wrap cached property to print relevant warnings
     """
     def __init__(self, func, name=None, doc=None):
-        super(_:wcached_property, self).__init__(func, name, doc)
+        super(_cached_property, self).__init__(func, name, doc)
 
     def __get__(self, obj, type=None):
         # Essentially copying to insert a message....: 
